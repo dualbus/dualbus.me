@@ -5,9 +5,8 @@ baseurl: ""
 url: "https://dualbus.me"
 twitter_username: dualbus
 github_username: dualbus
+encoding: utf-8
 
 # Build settings
 markdown: kramdown
-permalink: pretty
-
-encoding: utf-8
+permalink: /:year/:month/:day/:title.html
