@@ -1,0 +1,13 @@
+# Site settings
+title: dualbus' blog
+description: "That's a UNIX book -- Yeah -- Cool!"
+baseurl: ""
+url: "https://dualbus.me"
+twitter_username: dualbus
+github_username: dualbus
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+encoding: utf-8
