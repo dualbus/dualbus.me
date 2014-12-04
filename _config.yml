@@ -10,3 +10,4 @@ encoding: utf-8
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title.html
+exclude: [makefile]
