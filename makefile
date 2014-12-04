@@ -1,7 +1,10 @@
+# - we need --groupmap support in the remote side
+# - the remote shell might try to expand * as a glob, so we quote it
+# - if you use --groupmap, you have to specify -g for it to work
 rsync = rsync \
  --recursive \
  --delete-after --delay-updates \
- --no-p --no-g --chmod=ug=rX,o= \
+ -g --usermap \\*:dualbus --groupmap \\*:www-data --chmod=ug=rX,o= \
  --compress --progress
 
 build:
