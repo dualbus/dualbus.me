@@ -11,3 +11,7 @@ build:
 	jekyll build
 push: build
 	$(rsync) _site/ dualbus.me:public_html/
+serve-draft:
+	jekyll serve --drafts --watch 
+
+.PHONY: build push serve-draft
