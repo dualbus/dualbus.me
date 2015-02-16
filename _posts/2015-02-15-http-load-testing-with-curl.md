@@ -1,3 +1,9 @@
+---
+layout: post
+title: HTTP load testing with curl
+categories: curl linux
+---
+
 It's easy to use the curl command to load test a website. We'll (ab)use the
 -K/--config option, to pass a configuration file like this:
 

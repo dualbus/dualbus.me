@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GNU Bash bugs
+categories: bash linux
 ---
 
 This is a list of the bugs in GNU Bash that I've reported:
