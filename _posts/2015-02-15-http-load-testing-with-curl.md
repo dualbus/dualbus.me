@@ -24,3 +24,11 @@ the configuration in `config.txt`):
     printf '%.0sconfig.txt\n' {1..20} | xargs -P 20 -n 1 curl -K
 
 Enjoy.
+
+* * *
+
+## Updates
+
+2015-02-15: [This answer](http://serverfault.com/a/358464) from Ian Purton
+shows a different way of doing it (with ranges instead of alternations), so you
+can do: `curl 'http://domain.name/#[1-100]'`.
