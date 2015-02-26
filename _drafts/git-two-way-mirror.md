@@ -1,0 +1,1 @@
+//stendhalgame.org/wiki/Two_way_git_mirror
