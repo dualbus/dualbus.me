@@ -21,7 +21,7 @@ The interesting part is the `url`. We're requesting the same URL 1,000 times.
 Now, you can use GNU xargs to do some requests in parallel (assuming you placed
 the configuration in `config.txt`):
 
-    printf '%.sconfig.txt\n' {1..20} | xargs -P 20 -n 1 curl -K
+    printf '%.0sconfig.txt\n' {1..20} | xargs -P 20 -n 1 curl -K
 
 Enjoy.
 
@@ -32,6 +32,3 @@ Enjoy.
 2015-02-15: [This answer](http://serverfault.com/a/358464) from Ian Purton
 shows a different way of doing it (with ranges instead of alternations), so you
 can do: `curl 'http://domain.name/#[1-100]'`.
-
-2015-02-20: Thanks to izabera, who pointed out that `%.s` is equivalent to
-`%.0s`.
