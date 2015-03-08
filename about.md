@@ -1,17 +1,29 @@
 ---
 layout: page
-title: About
+title: 'About Eduardo Bustamante López (dualbus)'
 permalink: /about/
 ---
 
-Hey, I'm dualbus.
+Welcome.
 
-I'm on Freenode (IRC) as dualbus/edualbus, mainly in `#bash`.
+I'm a libre software enthusiast. I do Linux server administration for a living.
+I currently live in 
+[Aguascalientes](http://en.wikipedia.org/wiki/Aguascalientes,_Aguascalientes).
 
-You can also send me private email to `dualbusOMITTHIS@dualbus.me`, or
-`dualbusSPAMSUCKS@gmail.com`.
+You can find me on Freenode as dualbus/edualbus. I mainly lurk in `##bash-es`,
+`##sed`, `#awk`, `#bash`, `#gultij` and `#python-es`.
 
-Use `407BA4CF` for GPG encrypted email.
+If you want to send me private email, please use any of the following:
+dualbus -at- gmail _dot_ com, dualbus -at- dualbus _dot_ me, or
+dualbus -at- sdf _dot_ org.
 
-Oh, also [twitter](https://twitter.com/dualbus) and
-[github](https://github.com/dualbus).
+For encrypted email, you can use [this key](/dualbus.asc).
+
+Oh, I'm also on other places: [github](https://github.com/dualbus),
+[stackoverflow](http://stackoverflow.com/users/2654076),
+[twitter](https://twitter.com/dualbus), and
+[google+](https://plus.google.com/+EduardoABustamanteLópez).
+
+You can find a nightly mirror of this website on 
+[sdf](http://dualbus.sdf.org/blog), and its source code in
+[dualbus/dualbus.me](https://github.com/dualbus/dualbus.me).
