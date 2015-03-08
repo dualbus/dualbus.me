@@ -1,13 +1,13 @@
 ---
 layout: page
-title: 'About Eduardo Bustamante López (dualbus)'
+title: 'About the author'
 permalink: /about/
 ---
 
-Welcome.
+Welcome. My name is Eduardo Bustamante.
 
-I'm a libre software enthusiast. I do Linux server administration for a living.
-I currently live in 
+I'm a [libre software](https://www.gnu.org/philosophy/free-sw.html) enthusiast.
+I do Linux server administration for a living.  I currently live in 
 [Aguascalientes](http://en.wikipedia.org/wiki/Aguascalientes,_Aguascalientes).
 
 You can find me on Freenode as dualbus/edualbus. I mainly lurk in `##bash-es`,
@@ -27,3 +27,7 @@ Oh, I'm also on other places: [github](https://github.com/dualbus),
 You can find a nightly mirror of this website on 
 [sdf](http://dualbus.sdf.org/blog), and its source code in
 [dualbus/dualbus.me](https://github.com/dualbus/dualbus.me).
+
+This website is supposed to render correctly in any standards compliant browser
+(*specially in text-mode browsers like w3m*). If you find any error with the
+markup of the website or its content, please let me know.
