@@ -1,0 +1,15 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <!-- blog posts -->
+    {% for post in site.posts %}<loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
+    {% endfor %}
+
+    <!-- site pages -->
+    {% for page in site.pages %}<loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
+    {% endfor %}
+  </url>
+</urlset>

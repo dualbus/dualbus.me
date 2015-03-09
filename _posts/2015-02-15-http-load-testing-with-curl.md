@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTP load testing with curl
-categories: curl linux
+categories: curl gnulinux
 ---
 
 It's easy to use the curl command to load test a website. We'll (ab)use the

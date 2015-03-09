@@ -1,12 +1,26 @@
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: 'https://dualbus.me' }}">
+    <link rel="mirror" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="main feed" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: 'https://dualbus.me' }}">
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <!-- I'm lazy, I'll fill these later :-) -->
+    <!-- article:published_time - datetime - When the article was first published.-->
+    <!-- article:modified_time - datetime - When the article was last changed.-->
+    <!-- article:expiration_time - datetime - When the article is out of date after.-->
+    <!-- article:author - profile array - Writers of the article.-->
+    <!-- article:section - string - A high-level section name. E.g. Technology-->
+    <!-- article:tag - string array - Tag words associated with this article.-->
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
 </head>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: List of interesting commands
+categories: cli gnulinux
 ---
 
 SSH Keys
