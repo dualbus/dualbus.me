@@ -1,6 +1,6 @@
 # Site settings
-title: dualbus' blog
-description: "For great justice!"
+title: dualbus' website
+description: "Eduardo Bustamante' (dualbus) personal website. The topics discussed are: gnu/linux, free software (foss/floss), gnu bash, posix tools like sed, grep and awk, and similar topics."
 baseurl: ""
 url: "https://dualbus.me"
 twitter_username: dualbus
