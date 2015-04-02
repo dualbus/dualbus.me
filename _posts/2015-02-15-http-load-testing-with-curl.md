@@ -5,7 +5,7 @@ categories: curl gnulinux
 ---
 
 It's easy to use the curl command to load test a website. We'll (ab)use the
--K/--config option, to pass a configuration file like this:
+`-K/--config` option, to pass a configuration file like this:
 
     silent = 1
     output = "/dev/null"
@@ -25,10 +25,8 @@ the configuration in `config.txt`):
 
 Enjoy.
 
-* * *
-
 ## Updates
 
-2015-02-15: [This answer](http://serverfault.com/a/358464) from Ian Purton
+* Feb 15, 2015: [This answer](http://serverfault.com/a/358464) from Ian Purton
 shows a different way of doing it (with ranges instead of alternations), so you
 can do: `curl 'http://domain.name/#[1-100]'`.
