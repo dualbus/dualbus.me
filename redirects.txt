@@ -1,0 +1,6 @@
+location /feed.xml {
+return 301 /feeds/feed.xml;
+}
+location /feed.gnulinux.xml {
+return 301 /feeds/feed.gnulinux.xml;
+}

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<ul class="feeds">
+{% for feed in site.pages %}{% if feed.tags contains 'rss' %}
+<li><a href="{{ feed.url }}">{{ feed.title }}</a></li>
+{% endif %}{% endfor %}
+</ul>
