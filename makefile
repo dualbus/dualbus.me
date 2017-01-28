@@ -4,13 +4,13 @@
 rsync = rsync \
  --recursive \
  --delete-after --delay-updates \
- -g --usermap \\*:dualbus --groupmap \\*:www-data --chmod=ug=rX,o= \
+ -g --usermap \\*:b5f8b5d4153e1ab4 --groupmap \\*:www-data --chmod=ug=rX,o= \
  --compress --progress
 
 build:
 	jekyll build
 push: build
-	$(rsync) _site/ dualbus.me:public_html/
+	$(rsync) _site/ b5f8b5d4153e1ab4:www
 serve-draft:
 	jekyll serve --drafts --watch 
 

@@ -1,14 +1,13 @@
 # Site settings
 title: Eduardo Bustamante's website
-description: "Eduardo Bustamante' (dualbus) personal website. The topics discussed are: gnu/linux, free software (foss/floss), gnu bash, posix tools like sed, grep and awk, and similar topics."
+description: "Eduardo Bustamante's (dualbus) personal website"
 baseurl: ""
 url: "https://dualbus.me"
 twitter_username: dualbus
 github_username: dualbus
 encoding: utf-8
 author: Eduardo Bustamante
-email: dualbus@gmail.com
-copyright: 2014-2015
+copyright: 2014-2017
 
 # Build settings
 markdown: kramdown
