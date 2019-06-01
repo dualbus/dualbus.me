@@ -7,14 +7,14 @@ categories: bash gnulinux
 This is a list of the bugs in GNU Bash that I've reported:
 
 * [Improper array name validation for the 'mapfile' builtin](
-   https://lists.gnu.org/archive/html/bug-bash/2014-11/msg00097.html)
+   http://lists.gnu.org/archive/html/bug-bash/2014-11/msg00097.html)
 
 * [Segmentation fault when running recursive traps](
-   https://lists.gnu.org/archive/html/bug-bash/2014-11/msg00092.html)
+   http://lists.gnu.org/archive/html/bug-bash/2014-11/msg00092.html)
 
 * [Issue when using job control and SIGCHLD with bash 4.3 (trap is not being
    run)](
-   https://lists.gnu.org/archive/html/bug-bash/2014-04/msg00051.html)
+   http://lists.gnu.org/archive/html/bug-bash/2014-04/msg00051.html)
 
 * [Bash does not follow POSIX when return is called during the action of a trap](
    http://lists.gnu.org/archive/html/bug-bash/2014-03/msg00053.html)
