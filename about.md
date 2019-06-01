@@ -13,8 +13,8 @@ and do GNU/Linux server administration for a living.  I live in
 You can find me in Freenode as dualbus. I mainly lurk in `#bash` and `#gultij`.
 If you want to send me private email, please use: dualbus -at- gmail _dot_ com.
 
-I'm on these places: [github](https://github.com/dualbus),
-[google+](https://plus.google.com/+EduardoABustamanteLópez),
+I'm in these places on the Internet:
+[github](https://github.com/dualbus),
 [stackoverflow](http://stackoverflow.com/users/2654076), and
 [twitter](https://twitter.com/dualbus).
 
