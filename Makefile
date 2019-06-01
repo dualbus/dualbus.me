@@ -18,9 +18,10 @@ build: doctor
 serve-draft:
 	bundle exec jekyll serve --drafts --watch
 
-pre-push-check: check-clean check-certificate
-check-clean:
+pre-push-check: check-git check-certificate
+check-git:
 	output=$$(git status --porcelain) && [ -z "$$output" ]
+	[ "$$(git rev-parse --abbrev-ref HEAD)" = master ]
 check-certificate:
 	echo -n | openssl s_client -connect dualbus.me:443 -verify_return_error
 check-tls:
@@ -31,7 +32,7 @@ push: clean build pre-push-check
 
 
 .PHONY: \
-	check-clean \
+	check-git \
 	check-certificate \
 	check-tls \
 	pre-push-check \
