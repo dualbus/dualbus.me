@@ -7,17 +7,36 @@ rsync = rsync \
  -g --usermap \\*:b5f8b5d4153e1ab4 --groupmap \\*:www-data --chmod=ug=rX,o= \
  --compress --progress
 
-all: clean doctor build
+all: clean build
 
 clean:
 	bundle exec jekyll clean
 doctor:
 	bundle exec jekyll doctor
-build:
+build: doctor
 	bundle exec jekyll build
-push: build
-	$(rsync) _site/ b5f8b5d4153e1ab4:www
 serve-draft:
 	bundle exec jekyll serve --drafts --watch
 
-.PHONY: clean doctor build push serve-draft
+pre-push-check: check-clean check-certificate
+check-clean:
+	output=$$(git status --porcelain) && [ -z "$$output" ]
+check-certificate:
+	echo -n | openssl s_client -connect dualbus.me:443 -verify_return_error
+check-tls:
+	testssl dualbus.me
+
+push: clean build pre-push-check
+	$(rsync) _site/ b5f8b5d4153e1ab4:www
+
+
+.PHONY: \
+	check-clean \
+	check-certificate \
+	check-tls \
+	pre-push-check \
+	build \
+	clean \
+	doctor \
+	push \
+	serve-draft
