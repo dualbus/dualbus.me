@@ -4,7 +4,7 @@ title: Blog archive
 ---
 <h1>{{ page.title }}</h1>
 <ul class="archive">
-{% for post in site.posts%}
+{% for post in site.posts %}
 <li>
 <p>{{ post.date | date: "%b %-d, %Y" }} <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
 {% if post.categories.size > 0 %}<p>categories: {{ post.categories | join }}</p>{% endif %}

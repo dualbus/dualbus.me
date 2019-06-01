@@ -7,11 +7,17 @@ rsync = rsync \
  -g --usermap \\*:b5f8b5d4153e1ab4 --groupmap \\*:www-data --chmod=ug=rX,o= \
  --compress --progress
 
+all: clean doctor build push
+
+clean:
+	bundle exec jekyll clean
+doctor:
+	bundle exec jekyll doctor
 build:
-	jekyll build
+	bundle exec jekyll build
 push: build
 	$(rsync) _site/ b5f8b5d4153e1ab4:www
 serve-draft:
-	jekyll serve --drafts --watch 
+	bundle exec jekyll serve --drafts --watch
 
-.PHONY: build push serve-draft
+.PHONY: clean doctor build push serve-draft

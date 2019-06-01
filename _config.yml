@@ -6,10 +6,14 @@ url: "https://dualbus.me"
 twitter_username: dualbus
 github_username: dualbus
 encoding: utf-8
-author: Eduardo Bustamante
-copyright: 2014-2017
+author: Eduardo A. Bustamante López
+copyright: 2014-2019
 
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title.html
-exclude: [makefile]
+exclude:
+    - Dockerfile
+    - Gemfile
+    - Gemfile.lock
+    - Makefile
