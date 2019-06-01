@@ -8,16 +8,15 @@ Welcome. My name is Eduardo Bustamante.
 
 I'm a [libre software](https://www.gnu.org/philosophy/free-sw.html) enthusiast,
 and do GNU/Linux server administration for a living.  I live in 
-[Aguascalientes](http://en.wikipedia.org/wiki/Aguascalientes,_Aguascalientes).
+[British Columbia](https://en.wikipedia.org/wiki/British_Columbia).
 
-You can find me in Freenode as dualbus/edualbus. I mainly lurk in `##bash-es`,
-`#bash` and `#gultij`. If you want to send me private email, please use:
-dualbus -at- gmail _dot_ com.
+You can find me in Freenode as dualbus. I mainly lurk in `#bash` and `#gultij`.
+If you want to send me private email, please use: dualbus -at- gmail _dot_ com.
 
-I'm these places: [github](https://github.com/dualbus),
-[stackoverflow](http://stackoverflow.com/users/2654076),
-[twitter](https://twitter.com/dualbus), and
-[google+](https://plus.google.com/+EduardoABustamanteLópez).
+I'm on these places: [github](https://github.com/dualbus),
+[google+](https://plus.google.com/+EduardoABustamanteLópez),
+[stackoverflow](http://stackoverflow.com/users/2654076), and
+[twitter](https://twitter.com/dualbus).
 
 You can find a nightly mirror of this website on 
 [sdf](http://dualbus.sdf.org/blog), and its source code in
