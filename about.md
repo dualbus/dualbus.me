@@ -25,5 +25,5 @@ You can find a nightly mirror of this website on
 supposed to render correctly in any standards compliant browser (*specially in
 text-mode browsers like w3m*). If you find any error with the markup or
 content, please let me know. Here's an RSS feed of the posts in the
-[blog](/feed.xml), and a feed limited to posts related to
-[gnu/linux](/feed.gnulinux.xml).
+[blog](/feeds/feed.xml), and a feed limited to posts related to
+[gnu/linux](/feeds/feed.gnulinux.xml).

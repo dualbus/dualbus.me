@@ -7,7 +7,7 @@ rsync = rsync \
  -g --usermap \\*:b5f8b5d4153e1ab4 --groupmap \\*:www-data --chmod=ug=rX,o= \
  --compress --progress
 
-all: clean doctor build push
+all: clean doctor build
 
 clean:
 	bundle exec jekyll clean
