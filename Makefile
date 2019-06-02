@@ -21,7 +21,7 @@ doctor: install
 build: install doctor
 	bundle exec jekyll build
 build-sdf: install doctor
-	bundle exec jekyll build --config _config.yml,_config.sdf.yml
+	bundle exec jekyll build --config _config.yml,_config.sdf.yml --destination _site/blog/
 serve-draft: install
 	bundle exec jekyll serve --drafts --watch
 

@@ -17,5 +17,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
     internal_domains: site.config['html-proofer']['internal_domains'],
   }
 
-  HTMLProofer.check_directory(site.config['destination'], options).run
+  # [Documentation: HTML Proofer with baseurl](
+  #  https://github.com/jekyll/jekyll/issues/4122)
+  HTMLProofer.check_directory('_site', options).run
 end
