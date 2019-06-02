@@ -13,6 +13,7 @@ options = {
   },
   check_img_http: true,
   # enforce_https: true, # FIXME:
+  internal_domains: ['dualbus.me'],
 }
 
 Jekyll::Hooks.register :site, :post_write do |site|
