@@ -1,6 +1,3 @@
-JEKYLL_BASE_URL = https://dualbus.me
-JEKYLL_BUILD_DESTINATION = _site
-
 # - we need --groupmap support in the remote side
 # - the remote shell might try to expand * as a glob, so we quote it
 # - if you use --groupmap, you have to specify -g for it to work
@@ -22,9 +19,9 @@ install: Gemfile Gemfile.lock
 doctor: install
 	bundle exec jekyll doctor
 build: install doctor
-	bundle exec jekyll build \
-		--baseurl "$(JEKYLL_BASE_URL)" \
-		--destination "$(JEKYLL_BUILD_DESTINATION)"
+	bundle exec jekyll build
+build-sdf: install doctor
+	bundle exec jekyll build --config _config.yml,_config.sdf.yml
 serve-draft: install
 	bundle exec jekyll serve --drafts --watch
 
@@ -40,7 +37,7 @@ check-clean-room:
 	docker run --rm -e LANG=en_US.UTF-8 -v "$$(pwd):/src:ro" -t ruby:2.5 /bin/sh -euxc '\
 		cp -r /src /wrk; \
 		cd /wrk; \
-		make clean build; \
+		make clean build build-sdf; \
 		'
 
 

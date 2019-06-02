@@ -1,0 +1,7 @@
+url: "http://dualbus.sdf.org/blog"
+baseurl: ""
+
+html-proofer:
+  internal_domains: ['dualbus.sdf.org']
+
+sdf_url: ''

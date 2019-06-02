@@ -19,7 +19,7 @@ I'm in these places on the Internet:
 [twitter](https://twitter.com/dualbus).
 
 You can find a nightly mirror of this website on 
-[sdf](http://dualbus.sdf.org/blog), and its source code in
+[sdf]({{ site.sdf_url }}), and its source code in
 [github](https://github.com/dualbus/dualbus.me).  This website is
 supposed to render correctly in any standards compliant browser (*specially in
 text-mode browsers like w3m*). If you find any error with the markup or

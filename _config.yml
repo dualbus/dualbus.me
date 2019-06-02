@@ -1,8 +1,8 @@
 # Site settings
 title: Eduardo Bustamante's website
 description: "Eduardo Bustamante's (dualbus) personal website. The topics discussed are: gnu/linux, free software (foss/floss), gnu bash, posix tools like sed, grep and awk, and similar."
-baseurl: ""
 url: "https://dualbus.me"
+baseurl: ""
 twitter_username: dualbus
 github_username: dualbus
 encoding: utf-8
@@ -18,3 +18,8 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - Makefile
+
+html-proofer:
+  internal_domains: ['dualbus.me']
+
+sdf_url: 'http://dualbus.sdf.org/blog/'
