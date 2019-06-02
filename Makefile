@@ -1,3 +1,6 @@
+JEKYLL_BASE_URL = https://dualbus.me
+JEKYLL_BUILD_DESTINATION = _site
+
 # - we need --groupmap support in the remote side
 # - the remote shell might try to expand * as a glob, so we quote it
 # - if you use --groupmap, you have to specify -g for it to work
@@ -19,7 +22,9 @@ install: Gemfile Gemfile.lock
 doctor: install
 	bundle exec jekyll doctor
 build: install doctor
-	bundle exec jekyll build
+	bundle exec jekyll build \
+		--baseurl "$(JEKYLL_BASE_URL)" \
+		--destination "$(JEKYLL_BUILD_DESTINATION)"
 serve-draft: install
 	bundle exec jekyll serve --drafts --watch
 
